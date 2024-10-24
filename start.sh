@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Run the Docker container in detached mode
-docker run -d -p 8080:8080 --env-file .env --name parkpow_container parkpow_app
+# Build the Docker image
+docker build -t parkpow_websocket .
 
-echo "Docker container started!"
+# Run the Docker container with the .env file
+docker run --env-file go_websocket/.env -p 8080:8080 parkpow_websocket

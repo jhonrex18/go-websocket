@@ -1,6 +1,6 @@
 module parkpow_websocket
 
-go 1.23.2
+go 1.23
 
 require (
 	github.com/denisenkom/go-mssqldb v0.12.3 // indirect

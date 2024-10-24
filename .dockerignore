@@ -1,0 +1,4 @@
+# Ignore the .env file
+.env
+# Ignore build artifacts
+main
